@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Fonts */
+  --font: "Figtree", sans-serif;
+  --fs-heading: 2.4rem;
+  --fs-subtitle: 1.4rem;
+  --fs-maintext: 1.6rem;
+  --fs-lineheight: 1.5;
+
+  /* Colours */
+  --yellow: hsl(47, 88%, 63%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 38.4rem;
+  height: 52.2rem;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 2.4rem;
+  box-shadow: 0.85rem 0.85rem var(--black);
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
+}
+
+.container:hover {
+  box-shadow: 1.5rem 1.5rem var(--black);
+}
+
+.main-img {
+  width: 100%;
+  height: 20rem;
+  border-radius: 1rem;
+  margin-bottom: 2.4rem;
+}
+
+.category {
+  width: 8.2rem;
+  height: 2.9rem;
+  background-color: var(--yellow);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-name {
+  font-size: var(--fs-subtitle);
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: var(--fs-subtitle);
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+a:hover {
+  color: var(--yellow);
+}
+
+.heading {
+  font-size: var(--fs-heading);
+}
+
+.main-text {
+  font-size: var(--fs-maintext);
+  line-height: var(--fs-lineheight);
+  color: var(--grey);
+}
+
+.common-margin {
+  margin-bottom: 1.2rem;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-top: 2.4rem;
+}
+
+.icon-img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.name {
+  margin-left: 1.2rem;
+  font-size: var(--fs-subtitle);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    width: 32.7rem;
+    height: 50.1rem;
+  }
+
+  .container:hover {
+    box-shadow: 0.85rem 0.85rem var(--black);
+  }
+
+  .main-img {
+    min-height: 20rem;
+  }
+
+  .category {
+    width: 7.3rem;
+    height: 2.6rem;
+  }
+
+  .category-name {
+    font-size: 1.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .main-text {
+    font-size: 1.4rem;
+  }
+}
